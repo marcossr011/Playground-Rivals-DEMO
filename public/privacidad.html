@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#080A12" />
+    <title>Política de privacidad · Recreo</title>
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 28px 20px 64px;
+        background:
+          radial-gradient(700px 400px at 100% -10%, rgba(123, 97, 255, 0.18), transparent 60%),
+          radial-gradient(600px 380px at -10% 10%, rgba(255, 106, 61, 0.12), transparent 60%),
+          #080a12;
+        color: #f6f5ff;
+        font: 15px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      a { color: #ffb08d; }
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 22px;
+        padding: 8px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 999px;
+        color: #f6f5ff;
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: rgba(255, 106, 61, 0.16);
+        border: 1px solid rgba(255, 106, 61, 0.4);
+        color: #ff9a6b;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      h1 { margin: 14px 0 6px; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; }
+      h2 { margin: 34px 0 10px; font-size: 19px; letter-spacing: -0.01em; }
+      p, li { color: #c9c8e4; }
+      ul { padding-left: 20px; }
+      li { margin: 6px 0; }
+      .muted { color: #8d8fb0; font-size: 13px; }
+      .card {
+        margin: 22px 0;
+        padding: 16px 18px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .card strong { color: #f6f5ff; }
+      table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; font-size: 13.5px; }
+      th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.09); vertical-align: top; }
+      th { color: #f6f5ff; font-weight: 650; }
+      td { color: #c9c8e4; }
+      footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.08); color: #6e708f; font-size: 12px; }
+      code { background: rgba(255, 255, 255, 0.08); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/">← Volver a Recreo</a>
+      <span class="badge">Legal</span>
+      <h1>Política de privacidad</h1>
+      <p class="muted">Última actualización: 23 de noviembre de 2026</p>
+
+      <div class="card">
+        <strong>Resumen rápido:</strong> Recreo no tiene cuentas ni anuncios y no vende datos. Tu nombre y avatar se quedan en tu
+        dispositivo. La ubicación solo se comparte si tú lo activas dentro de una sala de juegos de calle, solo con los jugadores
+        de esa sala y solo mientras la partida está en marcha. Al cerrar la app, las salas y mensajes del servidor se pierden.
+      </div>
+
+      <h2>1. Quién trata tus datos</h2>
+      <p>
+        El responsable del tratamiento es el desarrollador de Recreo, contactable en
+        <a href="mailto:soporte@TU-DOMINIO.com">soporte@TU-DOMINIO.com</a>. Esta política se aplica a la aplicación móvil de
+        Recreo para iOS y Android y a su versión web.
+      </p>
+
+      <h2>2. Qué datos usa Recreo</h2>
+      <table>
+        <tr><th>Dato</th><th>Cuándo</th><th>Dónde se guarda</th></tr>
+        <tr><td>Nombre y avatar del jugador</td><td>Al crear o unirse a una sala</td><td>En tu dispositivo y en la memoria del servidor mientras la sala existe</td></tr>
+        <tr><td>Ubicación (latitud, longitud, precisión)</td><td>Solo si pulsas «Permitir ubicación» en una sala de juegos de calle</td><td>En la memoria del servidor mientras compartes; nunca en un historial permanente</td></tr>
+        <tr><td>Mensajes de sala, torneo y privados</td><td>Cuando escribes en un chat</td><td>En la memoria del servidor mientras dura la sala o la sesión</td></tr>
+        <tr><td>Reportes de jugadores</td><td>Cuando reportas a alguien</td><td>En la memoria del servidor, para revisar el abuso</td></tr>
+        <tr><td>Amigos, liga, favoritos y ajustes</td><td>Cuando juegas o cambias ajustes</td><td>Solo en el almacenamiento local de tu dispositivo</td></tr>
+        <tr><td>Datos técnicos de conexión (dirección IP, identificador de socket)</td><td>Al usar salas online</td><td>En la memoria del servidor durante la conexión</td></tr>
+      </table>
+      <p>Recreo no usa cookies publicitarias, ni analítica de terceros, ni vende datos personales.</p>
+
+      <h2>3. Ubicación: cómo se comparte exactamente</h2>
+      <ul>
+        <li>La ubicación es <strong>opcional</strong>. Si no la activas, puedes usar el resto de la app sin compartirla.</li>
+        <li>Solo se activa con tu permiso explícito del sistema (iOS o Android) y solo dentro de una sala privada de juegos de calle.</li>
+        <li>La ven únicamente los jugadores de esa sala, nunca otros usuarios de la app.</li>
+        <li>Dentro de la zona de juego, tu posición se mantiene oculta y solo se revela en las rondas configuradas por el anfitrión.</li>
+        <li>Si sales de la zona, tu posición se muestra en vivo a los jugadores de la sala para que puedan avisarte; si no vuelves en el tiempo acordado, quedas eliminado.</li>
+        <li>Puedes dejar de compartir en cualquier momento con «Dejar de compartir» o revocando el permiso en los ajustes del móvil.</li>
+        <li>El servidor no guarda tu recorrido ni un historial de posiciones.</li>
+      </ul>
+
+      <h2>4. Para qué se usan los datos</h2>
+      <ul>
+        <li>Prestar el servicio: salas, partidas, mapas, chat, amigos y ligas.</li>
+        <li>Seguridad y moderación: procesar reportes y silenciar usuarios.</li>
+        <li>Mostrar la ubicación de los jugadores dentro de la sala según las reglas del juego.</li>
+      </ul>
+      <p>Base legal: consentimiento para la ubicación y ejecución del servicio para el resto de funciones. No hay elaboración de perfiles ni decisiones automatizadas.</p>
+
+      <h2>5. Con quién se comparten</h2>
+      <p>
+        Solo con los jugadores de tu sala o de tu conversación privada, y con el proveedor de alojamiento técnico que ejecuta el
+        servidor de salas. No se comparten datos con anunciantes ni se venden a terceros. Podemos atender requerimientos legales
+        cuando la ley lo exija.
+      </p>
+
+      <h2>6. Conservación</h2>
+      <p>
+        Las salas, los mensajes y los reportes viven en la memoria del servidor y se eliminan al cerrarse la sala o reiniciarse el
+        servicio. Los datos de tu dispositivo (perfil, amigos, ajustes, liga) permanecen hasta que borres los datos de la app.
+        La ubicación se descarta al terminar la partida o al dejar de compartir.
+      </p>
+
+      <h2>7. Menores</h2>
+      <p>
+        Recreo no está dirigido a menores de 13 años (o de la edad mínima que exija tu país). Si un menor usa la app, debe hacerlo
+        con la supervisión de su padre, madre o tutor. Puedes escribirnos para solicitar la eliminación de datos.
+      </p>
+
+      <h2>8. Tus derechos</h2>
+      <p>
+        Puedes solicitar acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a
+        <a href="mailto:soporte@TU-DOMINIO.com">soporte@TU-DOMINIO.com</a>. También puedes eliminar los datos locales borrando los
+        datos de la app desde los ajustes del móvil, y retirar el permiso de ubicación en cualquier momento. Tienes derecho a
+        reclamar ante la autoridad de protección de datos de tu país.
+      </p>
+
+      <h2>9. Seguridad</h2>
+      <p>
+        Las conexiones con el servidor de salas usan cifrado HTTPS/WSS. Los datos se guardan en memoria y se limitan al mínimo
+        necesario para jugar. Ningún sistema es 100 % infalible, pero aplicamos medidas razonables.
+      </p>
+
+      <h2>10. Cambios</h2>
+      <p>
+        Si cambiamos esta política, actualizaremos la fecha de esta página y, cuando el cambio sea relevante, lo avisaremos dentro
+        de la app. El uso continuado tras la actualización implica aceptación.
+      </p>
+
+      <footer>
+        Recreo · Página de privacidad pensada para las fichas de App Store y Google Play. Contacto:
+        soporte@TU-DOMINIO.com
+      </footer>
+    </main>
+  </body>
+</html>

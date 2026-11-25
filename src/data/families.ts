@@ -1,0 +1,33 @@
+import type { FamilyId } from '../types';
+
+export const FAMILY_INFO: Record<FamilyId, { name: string; emoji: string }> = {
+  memory: { name: 'Memoria', emoji: '🧠' },
+  wordsearch: { name: 'Sopa de letras', emoji: '🔎' },
+  hangman: { name: 'Ahorcado', emoji: '🪢' },
+  anagram: { name: 'Anagramas', emoji: '🔀' },
+  wordguess: { name: 'Palabra oculta', emoji: '🟩' },
+  trivia: { name: 'Trivia', emoji: '❓' },
+  math: { name: 'Cálculo', emoji: '➗' },
+  klondike: { name: 'Solitario Klondike', emoji: '🃏' },
+  pyramid: { name: 'Pirámide', emoji: '🔺' },
+  blackjack: { name: 'Blackjack', emoji: '♠️' },
+  war: { name: 'Guerra de cartas', emoji: '⚔️' },
+  higherlower: { name: 'Mayor o menor', emoji: '⬆️' },
+  ttt: { name: 'Tres en raya', emoji: '⭕' },
+  connect4: { name: 'Cuatro en línea', emoji: '🔴' },
+  reversi: { name: 'Reversi', emoji: '⚫' },
+  '2048': { name: 'Fusión 2048', emoji: '🟪' },
+  minesweeper: { name: 'Buscaminas', emoji: '💣' },
+  sudoku: { name: 'Sudoku', emoji: '🔢' },
+  sliding: { name: 'Puzle deslizante', emoji: '🧩' },
+  maze: { name: 'Laberinto', emoji: '🌀' },
+  lightsout: { name: 'Luces fuera', emoji: '💡' },
+  snake: { name: 'Serpiente', emoji: '🐍' },
+  simon: { name: 'Secuencia', emoji: '🟢' },
+  reaction: { name: 'Reflejos', emoji: '⚡' },
+  whack: { name: 'Topos', emoji: '🔨' },
+  aim: { name: 'Puntería', emoji: '🎯' },
+  charades: { name: 'Mímica', emoji: '🎭' },
+  impostor: { name: 'Impostor', emoji: '🕵️' },
+  outdoor: { name: 'Aire libre', emoji: '🌳' }
+};

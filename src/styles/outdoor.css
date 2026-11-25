@@ -1,0 +1,919 @@
+.page-kicker {
+  display: block;
+  color: var(--coral);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.page-title {
+  font-size: 30px;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+/* ─────────────────────── Índice de juegos de calle ─────────────────────── */
+
+.outdoor-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 190px;
+  margin-bottom: 12px;
+  padding: 22px 20px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background:
+    radial-gradient(300px 200px at 100% 0%, rgba(66, 226, 166, 0.24), transparent 65%),
+    radial-gradient(280px 180px at 0% 100%, rgba(255, 201, 74, 0.16), transparent 70%),
+    linear-gradient(150deg, #123c2e, #0b231d 55%, #101a33);
+  border: 1px solid rgba(66, 226, 166, 0.18);
+}
+
+.outdoor-hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(8, 10, 18, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--mint);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-kicker i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 8px var(--mint);
+}
+
+.outdoor-hero h2 {
+  font-size: clamp(23px, 7vw, 31px);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  margin: 10px 0 8px;
+  max-width: 330px;
+}
+
+.outdoor-hero p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  max-width: 360px;
+}
+
+.outdoor-hero-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: none;
+  padding-bottom: 2px;
+  font-size: 32px;
+  line-height: 1;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
+}
+
+.outdoor-hero-art span:nth-child(2) {
+  font-size: 40px;
+  margin-left: -18px;
+}
+
+.outdoor-hero-art span:nth-child(3) {
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.outdoor-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.outdoor-perks span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+.featured-outdoor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featured-outdoor-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.featured-outdoor-card.is-big {
+  align-items: flex-start;
+  padding: 18px;
+  min-height: 140px;
+  background:
+    radial-gradient(300px 180px at 100% 0%, rgb(var(--coral-rgb) / 0.28), transparent 65%),
+    linear-gradient(150deg, #42200f, #1d1524);
+  border-color: rgb(var(--coral-rgb) / 0.28);
+}
+
+.featured-outdoor-emoji {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 27px;
+}
+
+.is-big .featured-outdoor-emoji {
+  width: 62px;
+  height: 62px;
+  font-size: 33px;
+  background: rgba(8, 10, 18, 0.35);
+}
+
+.featured-outdoor-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.featured-outdoor-body strong {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.is-big .featured-outdoor-body strong {
+  font-size: 21px;
+  letter-spacing: -0.02em;
+}
+
+.featured-outdoor-body small {
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.featured-outdoor-card > svg {
+  flex: none;
+  color: var(--faint);
+}
+
+.outdoor-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 10px;
+  margin-top: 5px;
+  color: var(--faint);
+  font-size: 10px;
+}
+
+.outdoor-meta .badge {
+  font-size: 9px;
+  padding: 3px 7px;
+}
+
+.outdoor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 7px;
+}
+
+.outdoor-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  min-width: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.outdoor-card:active {
+  transform: scale(0.99);
+}
+
+.outdoor-card-emoji {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-size: 23px;
+}
+
+.outdoor-card-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.outdoor-card-body strong {
+  font-size: 13.5px;
+}
+
+.outdoor-card-body small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.outdoor-card > svg {
+  flex: none;
+  color: var(--faint);
+}
+
+.outdoor-howto {
+  margin-top: 26px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.outdoor-howto h2 {
+  font-size: 19px;
+  margin-bottom: 14px;
+}
+
+.howto-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.howto-grid > div {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  column-gap: 10px;
+  align-items: baseline;
+}
+
+.howto-grid span {
+  display: grid;
+  place-items: center;
+  grid-row: span 2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(66, 226, 166, 0.12);
+  border: 1px solid rgba(66, 226, 166, 0.24);
+  color: var(--mint);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.howto-grid strong {
+  font-size: 13px;
+}
+
+.howto-grid p {
+  color: var(--faint);
+  font-size: 11.5px;
+  line-height: 1.45;
+  margin-top: 1px;
+}
+
+/* ─────────────────────── Guía de juego ─────────────────────── */
+
+.outdoor-guide {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.guide-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 26px 20px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background:
+    radial-gradient(300px 200px at 100% 0%, rgba(66, 226, 166, 0.22), transparent 65%),
+    linear-gradient(150deg, #143a2c, #0c1d24 60%, #111a33);
+  border: 1px solid rgba(66, 226, 166, 0.18);
+}
+
+.guide-hero.tone-aire {
+  background:
+    radial-gradient(300px 200px at 100% 0%, rgba(66, 226, 166, 0.22), transparent 65%),
+    linear-gradient(150deg, #143a2c, #0c1d24 60%, #111a33);
+}
+
+.guide-hero-emoji {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 62px;
+  line-height: 1;
+  opacity: 0.9;
+  transform: rotate(-6deg);
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.4));
+}
+
+.guide-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 6.8vw, 29px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  max-width: 78%;
+}
+
+.guide-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.guide-meta > span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(8, 10, 18, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+.guide-section {
+  margin-top: 22px;
+}
+
+.guide-section h2 {
+  font-size: 20px;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.guide-label {
+  display: inline-block;
+  color: var(--coral);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.guide-objective {
+  padding: 16px;
+  border-radius: var(--radius);
+  background: rgb(var(--coral-rgb) / 0.07);
+  border: 1px solid rgb(var(--coral-rgb) / 0.2);
+}
+
+.guide-objective p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.guide-intro {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.5;
+  margin: -2px 0 12px;
+}
+
+.guide-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+
+.guide-facts > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 12px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.guide-fact-emoji {
+  font-size: 19px;
+}
+
+.guide-facts strong {
+  font-size: 12px;
+}
+
+.guide-facts small {
+  color: var(--faint);
+  font-size: 9.5px;
+  line-height: 1.35;
+}
+
+.material-box {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.material-box .guide-label {
+  margin-bottom: 8px;
+}
+
+.material-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.material-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.material-list li > span {
+  flex: none;
+  font-size: 15px;
+}
+
+.rule-list {
+  list-style: none;
+  counter-reset: rule;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rule-list li {
+  counter-increment: rule;
+  position: relative;
+  padding: 12px 14px 12px 46px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.rule-list li::before {
+  content: counter(rule);
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 201, 74, 0.14);
+  border: 1px solid rgba(255, 201, 74, 0.25);
+  color: var(--yellow);
+  font-size: 10.5px;
+  font-weight: 800;
+}
+
+.variant-list,
+.safety-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.variant-list li,
+.safety-list li {
+  position: relative;
+  padding: 10px 12px 10px 32px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.variant-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  color: var(--violet-2);
+  font-size: 11px;
+}
+
+.guide-safety {
+  padding: 16px;
+  border-radius: var(--radius);
+  background: rgba(66, 226, 166, 0.05);
+  border: 1px solid rgba(66, 226, 166, 0.18);
+}
+
+.guide-safety h2 {
+  color: var(--mint);
+}
+
+.safety-list li {
+  background: rgba(8, 10, 18, 0.25);
+  border-color: rgba(66, 226, 166, 0.14);
+}
+
+.safety-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  color: var(--mint);
+  font-weight: 800;
+}
+
+.guide-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+/* ─────────────────────── Mapa de zona ─────────────────────── */
+
+.zone-map {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zone-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.map-wrap {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+}
+
+.map-canvas {
+  height: 300px;
+  width: 100%;
+  z-index: 0;
+}
+
+.map-placing {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  z-index: 500;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(8, 10, 18, 0.9);
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  pointer-events: none;
+}
+
+.leaflet-container {
+  background: #0d1019;
+  font-family: var(--font-body);
+  font-size: 11px;
+}
+
+.leaflet-container a {
+  color: var(--blue);
+}
+
+.leaflet-control-zoom a {
+  background: #1b2040;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.leaflet-control-zoom a:hover {
+  background: #262c52;
+}
+
+.leaflet-control-attribution {
+  background: rgba(8, 10, 18, 0.72) !important;
+  color: var(--faint) !important;
+  font-size: 8.5px !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #1b2040;
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+.leaflet-popup-close-button {
+  color: var(--muted) !important;
+}
+
+.zone-pin {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(8, 10, 18, 0.82);
+  border: 2px solid var(--yellow);
+  font-size: 17px;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.zone-pin-bandera {
+  border-color: var(--coral);
+}
+
+.zone-pin-baseA {
+  border-color: var(--blue);
+}
+
+.zone-pin-baseB {
+  border-color: var(--yellow);
+}
+
+.zone-pin-carcel {
+  border-color: var(--pink);
+}
+
+.zone-pin-punto {
+  border-color: var(--mint);
+}
+
+.zone-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.zone-actions .btn {
+  flex: 1 0 auto;
+}
+
+.zone-actions .btn.is-active {
+  background: rgba(66, 226, 166, 0.14);
+  border-color: rgba(66, 226, 166, 0.4);
+  color: var(--mint);
+}
+
+.zone-import {
+  display: flex;
+  gap: 6px;
+}
+
+.zone-import .input {
+  flex: 1;
+  font-size: 12px;
+  padding: 10px 12px;
+}
+
+.zone-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10.5px;
+}
+
+.zone-status {
+  padding: 9px 12px;
+  border-radius: 12px;
+  background: rgba(87, 184, 255, 0.09);
+  border: 1px solid rgba(87, 184, 255, 0.22);
+  color: #a8d8ff;
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+/* ─────────────────────── Modo árbitro ─────────────────────── */
+
+.referee {
+  padding: 16px;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(320px 160px at 100% 0%, rgb(var(--violet-rgb) / 0.2), transparent 65%),
+    var(--surface);
+  border: 1px solid var(--line);
+}
+
+.referee-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.referee-head h3 {
+  font-size: 17px;
+}
+
+.referee-clock {
+  flex: none;
+  padding: 8px 13px;
+  border-radius: 13px;
+  background: rgba(8, 10, 18, 0.55);
+  border: 1px solid var(--line-strong);
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.referee-clock.is-running {
+  color: var(--mint);
+  border-color: rgba(66, 226, 166, 0.35);
+}
+
+.referee-clock.is-over {
+  color: var(--danger);
+  border-color: rgba(255, 92, 108, 0.5);
+  animation: pulse-soft 1s ease-in-out infinite;
+}
+
+.referee-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.referee-scores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+}
+
+.referee-team {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 4px 8px;
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+}
+
+.referee-team-name {
+  font-size: 11.5px;
+  font-weight: 600;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.referee-team strong {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1;
+  text-align: right;
+  color: var(--yellow);
+}
+
+.referee-team-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 6px;
+}
+
+.referee-team-buttons .icon-btn.small {
+  flex: 1;
+  height: 32px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.referee-team-buttons .icon-btn.is-score {
+  background: rgba(66, 226, 166, 0.14);
+  border: 1px solid rgba(66, 226, 166, 0.3);
+  color: var(--mint);
+}
+
+.referee-log {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.referee-event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 2px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.referee-event small {
+  color: var(--faint);
+  font-size: 9.5px;
+  flex: none;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 560px) {
+  .outdoor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .featured-outdoor {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .featured-outdoor-card.is-big {
+    grid-row: span 2;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .howto-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .howto-grid > div {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+  .howto-grid span {
+    grid-row: auto;
+  }
+  .guide-facts > div {
+    padding: 15px 8px;
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Recreo</string>
+    <string name="title_activity_main">Recreo</string>
+    <string name="package_name">com.recreo.app</string>
+    <string name="custom_url_scheme">com.recreo.app</string>
+</resources>
